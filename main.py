@@ -36,7 +36,7 @@ def memorized():
     global current_card_info, to_learn
     to_learn.remove(current_card_info)
     csv_content = pandas.DataFrame(to_learn)
-    csv_content.to_csv('data/words_to_learn.csv')
+    csv_content.to_csv('data/words_to_learn.csv', index = False)
 
 
 
